@@ -1,0 +1,12 @@
+---
+import Hero from '#components/hero.astro';
+import type { MiniBio } from '../mini-bio.model';
+
+interface Props {
+  content: MiniBio;
+}
+
+const { content } = Astro.props;
+---
+
+<Hero ariaLabelledby="about-hero-heading" />
