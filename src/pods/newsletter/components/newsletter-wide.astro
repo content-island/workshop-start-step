@@ -24,6 +24,7 @@ const { content } = Astro.props;
     >
       <label for="newsletter-email-2" class="sr-only">{content.inputLabel}</label>
       <input
+        name="email"
         type="email"
         placeholder={content.inputPlaceholder}
         id="newsletter-email-2"
