@@ -1,23 +1,8 @@
 ---
-import type { MiniBio, MiniBioType } from './mini-bio.model';
 import MiniBioHero from './components/mini-bio-hero.astro';
 import MiniBioCard from './components/mini-bio-card.astro';
-
-const miniBio: MiniBio = {
-  title: 'About me',
-  name: 'John Doe',
-  role: 'Frontend Developer',
-  description:
-    'Passionate about creating amazing web experiences with modern technologies. I love sharing knowledge through articles and workshops.',
-  imageUrl: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
-  imageAlt: 'Portrait of John Doe',
-};
-
-interface Props {
-  type: MiniBioType;
-}
 
 const { type } = Astro.props;
 ---
 
-{type === 'hero' ? <MiniBioHero content={miniBio} /> : <MiniBioCard content={miniBio} />}
+{type === 'hero' ? <MiniBioHero /> : <MiniBioCard />}
