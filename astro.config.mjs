@@ -1,5 +1,6 @@
-// @ts-check
+// @ts-ignore
 import { defineConfig } from 'astro/config';
+
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
